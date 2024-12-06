@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Mi Proyecto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 data-i18n="welcome_message">Bienvenidos a Nuestro Proyecto</h1>
+        
+    </header>
+    <nav>
+        <ul>
+            <li><a class="nav-link" href="index.html" data-i18n="nav_home">Inicio</a></li>
+            <li><a class="nav-link" href="video.html" data-i18n="nav_video">Videos</a></li>
+            <li><a class="nav=link" href="folleto.html" data-i18n="nav_folleto"> Folletos </a></li>
+            <li><a class="nav=link" href="folleto2.html" data-i18n="nav_folleto"> Galeria de fotos</a></li>
+            <li><a class="nav-link" href="pagina.html" data-i18n="nav_pagina"> pagina arduino</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 data-i18n="main_title">Inicio</h2>
+        <h3 data-i18n="main_content">"Bienvenido a mi sitio web. Aquí descubrirás contenido fascinante, videos y muchas otras sorpresas."</h3>
+        <p>
+            En nuestro proyecto de Aula, exploramos la edición de imágenes utilizando GIMP, donde aplicamos diversa técnicas, como el uso de máscaras para mejorar y combinar imágenes de manera efectiva. Luego, con Inkscape, nos enfocamos en la creación de imágenes con perspectiva y la elaboración de paisajes, además de aprender a vectorizar imágenes para obtener gráficos escalables de alta calidad. En el tercer periodo, nos sumergimos en el mundo del desarrollo web, cubriendo los fundamentos de HTML y CSS para construir y estilizar páginas web, integrando todo lo aprendido en un proyecto cohesivo y funcional.
+        </p>
+    </main>
+    <div class="comments-section">
+        <h3 data-i18n="comments_title">Comentarios</h3>
+        <ul id="comment-list"></ul>
+        <input type="text" id="comment-input" placeholder="Escribe un comentario..." data-i18n="[placeholder]comments_placeholder">
+        <button onclick="submitComment()" data-i18n="comments_button">Enviar</button>
+    </div>
+    <footer>
+        <p data-i18n="contact_info">Contacto: caparra@unibarranquilla.edu.co | Tel: 312 2900111</p>
+    </footer>
+    
+</body>
+</html>
+
+

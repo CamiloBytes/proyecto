@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Mi Poyecto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 data-i18n="welcome_message">Bienvenidos a Nuestro Proyecto</h1>
+        <div class="menu-container">
+            <div class="menu-button">⋮</div>
+            <div class="dropdown">
+                <a href="#" id="dark-mode-toggle">Modo Oscuro</a>
+                <a href="#" id="language-toggle">Idioma</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="nav-link" href="index.html" data-i18n="nav_home">Inicio</a></li>
+            <li><a class="nav-link" href="video.html" data-i18n="nav_video">Videos</a></li>
+            <li><a class="nav-link" href="folleto.html" data-i18n="nav_folleto">Folletos</a></li>
+            <li><a class="nav-link" href="folleto2.html" data-i18n="nav_folleto">Galeria de fotos</a></li>
+            <li><a class="nav-link" href="pagina.html" data-i18n="nav_pagina">Página Arduino</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h4 data-i18n="main_title">Toque aquí para ingresar al álbum de GIMP:</h4>
+        <a href="https://new.express.adobe.com/webpage/XCVPAr3eU16ij">Visitar el Album de GIMP</a>
+        <h4 data-i18n="main_title">Toque aquí para ingresar al album de INKSCAPE:</h4>
+        <a href="https://new.express.adobe.com/webpage/si3nxvMSr2gUd">Visite el Album de INKSCAPE</a>
+    </main>
+    <div class="comments-section">
+        <h3 data-i18n="comments_title">Comentarios</h3>
+        <ul id="comment-list"></ul>
+        <input type="text" id="comment-input" placeholder="Escribe un comentario..." data-i18n="[placeholder]comments_placeholder">
+        <button onclick="submitComment()" data-i18n="comments_button">Enviar</button>
+    </div>
+    <footer>
+        <p data-i18n="contact_info">Contacto: caparra@unibarranquilla.edu.co | Tel: 312 2900111</p>
+    </footer>
+</body>
+</html>
