@@ -1,0 +1,431 @@
+:root {
+    --primary-color: #284827;
+    --secondary-color: #17AD12;
+    --accent-color: #1DD317;
+}
+
+body {
+    min-height: 100dvh;
+}
+
+main {
+    margin-top: 2rem;
+}
+
+.container_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.profile-container {
+    width: 100%;
+    max-width: 1400px;
+    backdrop-filter: blur(10px);
+    background-color: #37963d2d;
+    /* Verde semi-transparente */
+    border: 1px solid rgba(9, 58, 12, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: transparent;
+    /* transparente pa’ que se vea el degradado */
+    color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+}
+
+.sidebar .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #284827;
+    object-fit: cover;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.menu button {
+    padding: 0.9rem 1rem;
+    background: linear-gradient(225deg, #284827, #329a2e);
+    border-radius: 12px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-align: left;
+}
+
+.menu button:hover {
+    background: #329a2ed0;
+    transform: translateX(4px);
+}
+
+#logout-btn {
+    background: #c5c5c4 !important;
+    font-weight: 600;
+    color: #313131;
+}
+
+#logout-btn:hover {
+    background: #a0a09c !important;
+}
+
+/* Main content */
+.profile-content {
+    color: #fff;
+    flex: 1;
+    background: transparent;
+    /* transparente también */
+    padding: 2rem;
+    color: #284827;
+    /* texto blanco pa’ contrastar con el degradado */
+    width: 600px;
+}
+
+.section-title {
+    color: #a0a09c;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    border-bottom: 3px solid rgba(9, 58, 12, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.settings-item {
+    padding: 1rem;
+    background: rgba(76, 71, 71, 0.15);
+    border: 1px solid rgba(9, 58, 12, 0.2);
+    border-radius: 12px;
+    font-size: 0.95rem;
+    color: #fff;
+}
+
+.view-container {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(76, 71, 71, 0.15);
+    border: 1px solid rgba(9, 58, 12, 0.2);
+    border-radius: 12px;
+    min-height: 120px;
+    color: #fff;
+}
+
+.edit-btn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    margin-left: 10px;
+}
+
+/*Design pedidos*/
+.orders-container {
+    max-height: 20dvh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-right: 0.5rem;
+}
+
+/* Scrollbar bonito */
+.orders-container::-webkit-scrollbar {
+    width: 6px;
+}
+.orders-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+.orders-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.order-card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
+    padding: 0.8rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.order-card h5 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #f8fafc;
+}
+
+.order-card p {
+    font-size: 0.8rem;
+    color: #e2e8f0;
+    margin: 0.15rem 0;
+    line-height: 1.3;
+}
+
+.order-items {
+    margin-top: 0.5rem;
+}
+
+.order-items h6 {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+    color: #cbd5e1;
+}
+
+.order-items ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.order-items li {
+    font-size: 0.75rem;
+    color: #e2e8f0;
+    margin-bottom: 0.2rem;
+    line-height: 1.2;
+}
+
+/* No orders state */
+.no-orders {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.no-orders p {
+    color: #94a3b8;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.no-orders .btn-primary {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(225deg, #284827, #329a2e);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.no-orders .btn-primary:hover {
+    background: #329a2ed0;
+}
+
+
+
+/*Design pasarela de pagos*/
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    justify-items: center;
+}
+
+.payment-card {
+    background: rgba(76, 71, 71, 0.15);
+    border: 1px solid rgba(9, 58, 12, 0.2);
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 120px;
+}
+
+.payment-card:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.payment-card img {
+    max-width: 80%;
+    max-height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.payment-card:hover img {
+    transform: rotate(-3deg) scale(1.1);
+}
+
+
+/*design help*/
+
+.help-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.help-item {
+    background: rgba(76, 71, 71, 0.15);
+    border: 1px solid rgba(9, 58, 12, 0.2);
+    border-radius: 15px;
+    padding: 1rem;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    color: #e2e8f0;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.help-item:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.help-item img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.help-item:hover img {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+.help-item span {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+@media screen and (max-width: 450px) {
+    main{
+        padding: 0px 20px;
+        margin-top: 0;
+    }
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 1rem 15px 1rem 15px; /* increase horizontal padding */
+        order: 1; /* Sidebar above content */
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar .avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .menu button {
+        padding: 0.7rem 0.8rem;
+        font-size: 0.9rem;
+        flex: 1 1 calc(50% - 0.25rem);
+        min-width: 120px;
+    }
+
+    .profile-content {
+        width: 100%;
+        padding: 1rem;
+        order: 1; /* Content above sidebar */
+    }
+
+    .section-title {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .settings-item {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .view-container {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .orders-container {
+        max-height: 30dvh;
+    }
+
+    .payment-methods {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1rem;
+    }
+
+    .payment-card {
+        width: 100px;
+        height: 80px;
+        padding: 0.8rem;
+    }
+
+    .help-links {
+        gap: 1rem;
+    }
+
+    .help-item {
+        width: 100px;
+        padding: 0.8rem;
+    }
+
+    .help-item img {
+        width: 40px;
+    }
+
+    .help-item span {
+        font-size: 0.8rem;
+    }
+}
