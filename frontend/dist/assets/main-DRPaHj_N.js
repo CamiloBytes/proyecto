@@ -1,0 +1,1 @@
+import"./modulepreload-polyfill-B5Qt9EMX.js";import"./main-BZgMBzPQ.js";const o=JSON.parse(localStorage.getItem("user"));o?window.location.href="/src/views/dashboard.html":console.log("Usuario no autenticado:",o);

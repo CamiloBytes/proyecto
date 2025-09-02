@@ -1,0 +1,1 @@
+function e(){localStorage.removeItem("user"),window.location.href="/src/views/auth.html"}document.addEventListener("DOMContentLoaded",function(){const t=document.getElementById("logout-btn");t&&t.addEventListener("click",e)});document.addEventListener("DOMContentLoaded",function(){const t=document.getElementById("btnLogout");t&&t.addEventListener("click",e)});
